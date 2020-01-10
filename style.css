@@ -5,8 +5,13 @@ html, body {
 }
 
 ul {
+    display: inline-block;
     padding: 0;
     margin: 0;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 li {
@@ -21,6 +26,18 @@ a {
     text-decoration: none;
     opacity: 0.75;
     padding-left: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #f2f2f2;
 }
 
 #sub-links {
@@ -43,7 +60,92 @@ a {
     cursor: default;
 }
 
+#main {
+    grid-area: main-content;
+    display: grid;
+    align-self: start;
+    justify-items: center;
+    padding: 0px 0px 137px;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 109px 0px 25px;
+}
+
+#search-bar {
+    background: url(./assets/magnifying-glass-lighter.png) no-repeat 14px center;
+    background-size: 16px;
+    width: 450px;
+    height: 40px;
+    border: 2px solid #ebebeb;
+    border-radius: 26px;
+    padding-left: 45px;
+}
+
+#search-bar:hover, #search-bar:focus {
+    box-shadow: 0.5px 1px 3px rgba(58, 57, 57, 0.2);
+    outline: none;
+}
+
+#test {
+    background: url(./assets/micro.png) no-repeat;
+    background-size: 16px;
+    background-position: 95% 15%;
+}
+
+#country {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px 20px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+
+#bot-sub-links {
+    margin: 15px 15px;
+    display: inline-block;
+}
+
+#bot-sub-links {
+    margin: 15px 15px;
+    display: inline-block;
+}
+
+#bot-sub-links-right {
+    margin: 15px 15px;
+    float: right;
+}
+
 .apps a {
     background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
     background-size: 528px 68px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    color: gray;
+    font-size: 14px;
+}
+
+.search-button:hover {
+    border: 1px solid lightgray;
+    padding: 9px;
+    background-color: #282828;
+    background-color: #f3f3f3;
+    box-shadow: 0px 0px 0.5px 0px #a9adaa;
 }
