@@ -1,0 +1,32 @@
+.body ul li a {
+ font-size: 13px
+ color: #303030;
+ text-decoration: none;
+
+.body {
+ display: grid;
+ grid-template-columns: minmax(max-content, 1fr) minmax(max-content,
+  2fr) minmax(max-content, 1fr);
+ grid-template-rows: auto 2fr auto;
+ grid-template-areas: "header-left . header-right" "main-content main-content main-content"
+  "footer-left footer-center footer-right";
+ align-items: center;
+ height: 100%;
+ width: 100%;
+}
+
+.top-left .bottom-left {
+ justify-self: start;
+}
+
+.top {
+ padding: 15px 15px;
+}
+
+.top-left {
+ grid-area: header-left;
+}
+
+div {
+ display: block
+}
